@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 from services.reporte_ingreso_egreso_service import generar_reporte_ingresos_egresos_pdf, generar_reporte_ingresos_egresos_excel
@@ -21,5 +20,3 @@ async def obtener_reporte_excel():
     excel_file = generar_reporte_ingresos_egresos_excel()
     return StreamingResponse(excel_file, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                              headers={"Content-Disposition": "attachment; filename=reporte_ingresos_egresos.xlsx"})
-=======
->>>>>>> Stashed changes
