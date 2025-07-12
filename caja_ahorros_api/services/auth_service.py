@@ -1,4 +1,4 @@
-from config.database import db
+from caja_ahorros_api.config.database import db
 from passlib.context import CryptContext
 from utils.jwt_utils import create_access_token
 from bson.objectid import ObjectId

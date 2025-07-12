@@ -1,0 +1,7 @@
+# Para pruebas y cobertura
+pytest
+pytest-asyncio
+pytest-cov
+coverage
+httpx            # para probar endpoints async de FastAPI
+mongomock        # para simular MongoDB en repositorios
