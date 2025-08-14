@@ -1,5 +1,5 @@
 from typing import Optional  # Asegúrate de importar Optional
-from repositories.auditoria_repo import registrar_evento_auditoria, obtener_eventos_auditoria as obtener_eventos_auditoria_repo  # Asegúrate de que la función obtener_eventos_auditoria esté correctamente referenciada
+from caja_ahorros_api.repositories.auditoria_repo import registrar_evento_auditoria, obtener_eventos_auditoria as obtener_eventos_auditoria_repo  # Asegúrate de que la función obtener_eventos_auditoria esté correctamente referenciada
 from caja_ahorros_api.models.auditoria_model import AuditoriaModel
 from datetime import datetime
 
