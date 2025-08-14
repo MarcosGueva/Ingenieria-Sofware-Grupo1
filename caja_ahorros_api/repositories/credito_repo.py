@@ -1,5 +1,5 @@
 from config.database import db
-from models.credito_model import CreditoModel, AmortizacionModel
+from caja_ahorros_api.models.credito_model import CreditoModel, AmortizacionModel
 from bson.objectid import ObjectId
 
 async def registrar_credito(credito: CreditoModel):

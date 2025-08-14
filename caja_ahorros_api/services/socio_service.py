@@ -1,5 +1,5 @@
 from repositories.socio_repo import registrar_socio, obtener_socio, actualizar_socio, eliminar_socio, obtener_todos_los_socios
-from models.socio_model import SocioModel
+from caja_ahorros_api.models.socio_model import SocioModel
 from fastapi import HTTPException
 
 async def crear_socio(socio_data: SocioModel):

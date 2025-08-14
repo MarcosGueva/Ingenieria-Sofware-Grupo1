@@ -1,5 +1,5 @@
 from config.database import db
-from models.socio_model import SocioModel
+from caja_ahorros_api.models.socio_model import SocioModel
 from bson.objectid import ObjectId
 
 async def registrar_socio(socio: SocioModel):

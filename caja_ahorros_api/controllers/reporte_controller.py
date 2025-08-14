@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
-from services.reporte_service import generar_libro_diario, generar_historial_ahorros
+from caja_ahorros_api.services.reporte_service import generar_libro_diario, generar_historial_ahorros
 
 router = APIRouter()
 

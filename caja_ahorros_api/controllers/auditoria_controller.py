@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from services.auditoria_service import obtener_eventos_auditoria
+from caja_ahorros_api.services.auditoria_service import obtener_eventos_auditoria
 
 router = APIRouter()
 

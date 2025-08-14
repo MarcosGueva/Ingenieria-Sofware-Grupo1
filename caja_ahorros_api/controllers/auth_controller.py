@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from ..schemas.user_schema   import UserCreate, UserLogin, UserOut
-from ..services.auth_service import register_user, authenticate_user
+from caja_ahorros_api.services.auth_service import register_user, authenticate_user
+from caja_ahorros_api.utils.jwt_utils import get_current_user, check_roles
 
 router = APIRouter()
 

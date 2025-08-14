@@ -1,5 +1,5 @@
 from repositories.credito_repo import registrar_credito, obtener_credito, aprobar_credito
-from models.credito_model import CreditoModel
+from caja_ahorros_api.models.credito_model import CreditoModel
 
 async def solicitar_credito(credito_data: CreditoModel):
     """

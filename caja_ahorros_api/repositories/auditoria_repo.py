@@ -1,5 +1,5 @@
 from config.database import db
-from models.auditoria_model import AuditoriaModel
+from caja_ahorros_api.models.auditoria_model import AuditoriaModel
 from bson.objectid import ObjectId
 
 async def registrar_evento_auditoria(auditoria: AuditoriaModel):

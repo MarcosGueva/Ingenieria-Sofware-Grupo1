@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
-from services.reporte_ingreso_egreso_service import generar_reporte_ingresos_egresos_pdf, generar_reporte_ingresos_egresos_excel
+from caja_ahorros_api.services.reporte_ingreso_egreso_service import generar_reporte_ingresos_egresos_pdf, generar_reporte_ingresos_egresos_excel
 
 router = APIRouter()
 

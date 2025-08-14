@@ -1,6 +1,6 @@
 from typing import Optional  # Asegúrate de importar Optional
 from repositories.auditoria_repo import registrar_evento_auditoria, obtener_eventos_auditoria as obtener_eventos_auditoria_repo  # Asegúrate de que la función obtener_eventos_auditoria esté correctamente referenciada
-from models.auditoria_model import AuditoriaModel
+from caja_ahorros_api.models.auditoria_model import AuditoriaModel
 from datetime import datetime
 
 async def registrar_accion_auditoria(accion: str, usuario_id: str, entidad: str, datos: Optional[dict] = None):

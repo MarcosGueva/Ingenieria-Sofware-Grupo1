@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from services.credito_service import solicitar_credito, obtener_historial_creditos, aprobar_credito_solicitado
-from schemas.credito_schema import CreditoCreate, CreditoOut
+from caja_ahorros_api.services.credito_service import solicitar_credito, obtener_historial_creditos, aprobar_credito_solicitado
+from caja_ahorros_api.schemas.credito_schema import CreditoCreate, CreditoOut
 
 router = APIRouter()
 

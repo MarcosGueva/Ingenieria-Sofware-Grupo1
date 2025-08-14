@@ -1,5 +1,5 @@
 from config.database import db
-from models.ahorro_model import AhorroModel
+from caja_ahorros_api.models.ahorro_model import AhorroModel
 from bson.objectid import ObjectId
 
 async def registrar_ahorro(ahorro: AhorroModel):

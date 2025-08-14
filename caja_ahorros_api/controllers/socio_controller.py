@@ -1,6 +1,12 @@
 from fastapi import APIRouter, HTTPException
-from ..schemas.user_schema   import UserCreate, UserLogin, UserOut
-from ..services.auth_service import register_user, authenticate_user
+from caja_ahorros_api.schemas.socio_schema import SocioCreate, SocioOut
+from caja_ahorros_api.services.socio_service  import (
+    crear_socio,
+    obtener_socio_por_id,
+    modificar_socio,
+    eliminar_socio_por_id,
+    listar_socios
+)
 
 router = APIRouter()
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from services.ingreso_egreso_service import registrar_transaccion, listar_ingresos_egresos
-from schemas.ingreso_egreso_schema import IngresoEgresoCreate, IngresoEgresoOut
+from caja_ahorros_api.services.ingreso_egreso_service import registrar_transaccion, listar_ingresos_egresos
+from caja_ahorros_api.schemas.ingreso_egreso_schema import IngresoEgresoCreate, IngresoEgresoOut
 
 router = APIRouter()
 

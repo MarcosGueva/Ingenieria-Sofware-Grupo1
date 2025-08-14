@@ -1,5 +1,5 @@
 from repositories.ingreso_egreso_repo import registrar_ingreso_egreso, obtener_ingresos_egresos
-from models.ingreso_egreso_model import IngresoEgresoModel
+from caja_ahorros_api.models.ingreso_egreso_model import IngresoEgresoModel
 from fastapi import HTTPException
 
 async def registrar_transaccion(tipo: str, monto: float, descripcion: str, entidad: str):

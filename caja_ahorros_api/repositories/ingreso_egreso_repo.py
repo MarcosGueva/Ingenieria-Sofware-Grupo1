@@ -1,5 +1,5 @@
 from config.database import db
-from models.ingreso_egreso_model import IngresoEgresoModel
+from caja_ahorros_api.models.ingreso_egreso_model import IngresoEgresoModel
 from bson.objectid import ObjectId
 
 async def registrar_ingreso_egreso(transaccion: IngresoEgresoModel):
