@@ -1,5 +1,10 @@
 # caja_ahorros_api/main.py
 
+
+import os
+from caja_ahorros_api.config.database import db
+from caja_ahorros_api.services.auth_service import ensure_indexes
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -24,6 +29,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+
+@app.on_event("startup")
+async def on_startup():
+    print("[DB] MONGO_URI =", os.getenv("MONGO_URI"))
+    # ping: si falla aquí, verás el error exacto de conexión
+    await db.command("ping")
+    await ensure_indexes()
 
 # --- Routers ---
 app.include_router(auth_router,      prefix="/auth",                         tags=["Autenticación"])

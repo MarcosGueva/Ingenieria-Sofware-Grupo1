@@ -1,4 +1,7 @@
-from repositories.ingreso_egreso_repo import registrar_ingreso_egreso, obtener_ingresos_egresos
+from caja_ahorros_api.repositories.ingreso_egreso_repo import (
+    registrar_ingreso_egreso,
+    obtener_ingresos_egresos,
+)
 from caja_ahorros_api.models.ingreso_egreso_model import IngresoEgresoModel
 from fastapi import HTTPException
 

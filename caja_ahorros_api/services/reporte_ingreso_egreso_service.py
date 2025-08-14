@@ -2,7 +2,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from openpyxl import Workbook
 from io import BytesIO
-from config.database import db
+from caja_ahorros_api.config.database import db
 from datetime import datetime
 
 def generar_reporte_ingresos_egresos_pdf():

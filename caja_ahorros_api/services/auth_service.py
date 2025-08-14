@@ -1,4 +1,5 @@
 from caja_ahorros_api.config.database import db
+from pymongo.errors import ServerSelectionTimeoutError
 from passlib.context import CryptContext
 from caja_ahorros_api.utils.jwt_utils import (
     create_access_token,
@@ -14,10 +15,10 @@ def verify_password(plain: str, hashed: str) -> bool:
     return pwd_context.verify(plain, hashed)
 
 async def ensure_indexes():
-    """
-    Crea índices necesarios (idempotente). Llama una vez al arrancar la app.
-    """
-    await db.users.create_index("email", unique=True)
+    try:
+        await db.users.create_index("email", unique=True)
+    except ServerSelectionTimeoutError:
+        print("[WARN] No se pudo conectar a MongoDB para crear índices. Verifica MONGO_URI o la red.")
 
 async def register_user(user_data):
     # Normalizar email

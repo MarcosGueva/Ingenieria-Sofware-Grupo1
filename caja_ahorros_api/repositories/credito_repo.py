@@ -1,4 +1,4 @@
-from config.database import db
+from caja_ahorros_api.config.database import db
 from caja_ahorros_api.models.credito_model import CreditoModel, AmortizacionModel
 from bson.objectid import ObjectId
 

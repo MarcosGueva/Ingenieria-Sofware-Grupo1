@@ -1,4 +1,4 @@
-from config.database import db
+from caja_ahorros_api.config.database import db
 from caja_ahorros_api.models.auditoria_model import AuditoriaModel
 from bson.objectid import ObjectId
 
