@@ -2,6 +2,10 @@
 
 
 import os
+
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv(filename=".env", usecwd=True), override=True)
+
 from caja_ahorros_api.config.database import db
 from caja_ahorros_api.services.auth_service import ensure_indexes
 
@@ -21,6 +25,13 @@ from caja_ahorros_api.services.auth_service import ensure_indexes
 
 app = FastAPI(title="API Caja de Ahorros")
 
+
+ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5174",
+]
 # --- CORS: permitir llamadas desde Vite (frontend) ---
 app.add_middleware(
     CORSMiddleware,
@@ -29,7 +40,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 
 @app.on_event("startup")
@@ -56,6 +66,6 @@ async def on_startup():
     await ensure_indexes()
 
 # (Opcional) healthcheck rápido
-@app.get("/", tags=["Health"])
+@app.get("/")
 def root():
-    return {"status": "ok", "service": "caja_ahorros_api"}
+    return {"message": "Backend activo"}
