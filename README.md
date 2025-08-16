@@ -5,13 +5,13 @@ Frontend en React (Vite) y Backend en FastAPI con MongoDB.
 
 👥 Integrantes del Grupo
 
-Marcos Guevara
+o Marcos Guevara
 
-Kenneth Vera
+o Kenneth Vera
 
-Ricardo Peña
+o Ricardo Peña
 
-Génesis Gusñay
+o Génesis Gusñay
 
 🧩 Tareas asignadas
 Backend
