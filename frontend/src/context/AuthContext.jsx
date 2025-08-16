@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from "react";
 import { isAuthenticated, logout as doLogout } from "../api/auth";
 
 const AuthContext = createContext(null);
-
 export function AuthProvider({ children }) {
   const [authed, setAuthed] = useState(isAuthenticated());
 
