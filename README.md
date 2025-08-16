@@ -26,8 +26,6 @@ Frontend en React (Vite) y Backend en FastAPI con MongoDB.
 - **Kenneth Vera** → creación de `main.jsx` y estructura de `components/`.  
 - **Marcos Guevara** → creación de `pages/` y configuración de la conexión **backend ⇄ frontend** (consumo de API).  
 
-📌 *Nota: Los nombres de carpetas/archivos se listan tal como existen en el proyecto para facilitar su verificación.*  
-
 ---
 
 ## 🚀 CARACTERÍSTICAS
