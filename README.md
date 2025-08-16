@@ -22,7 +22,7 @@ Kenneth Vera → actualización de repositories/, schemas/ y del archivo de entr
 
 Génesis Gusñay → actualización de models/ y configuración en config/.
 
-Frontend (creación y configuración)
+🧩 Frontend (creación y configuración)
 
 Génesis Gusñay → creación de App.jsx y App.css.
 
